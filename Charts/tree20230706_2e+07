@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Non Invasive Blood Pressure systolic <= 101.5\ngini = 0.5\nsamples = 464\nvalue = [232, 232]"] ;
+1 [label="Non Invasive Blood Pressure systolic <= 74.0\ngini = 0.38\nsamples = 192\nvalue = [49, 143]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 42\nvalue = [0, 42]"] ;
+1 -> 2 ;
+3 [label="Respiratory Rate <= 23.5\ngini = 0.44\nsamples = 150\nvalue = [49, 101]"] ;
+1 -> 3 ;
+4 [label="gini = 0.497\nsamples = 84\nvalue = [39, 45]"] ;
+3 -> 4 ;
+5 [label="gini = 0.257\nsamples = 66\nvalue = [10, 56]"] ;
+3 -> 5 ;
+6 [label="Temperature Celsius <= 34.95\ngini = 0.44\nsamples = 272\nvalue = [183, 89]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 12\nvalue = [0, 12]"] ;
+6 -> 7 ;
+8 [label="Heart Rate <= 102.5\ngini = 0.417\nsamples = 260\nvalue = [183, 77]"] ;
+6 -> 8 ;
+9 [label="gini = 0.331\nsamples = 191\nvalue = [151, 40]"] ;
+8 -> 9 ;
+10 [label="gini = 0.497\nsamples = 69\nvalue = [32, 37]"] ;
+8 -> 10 ;
+}
