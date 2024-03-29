@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Non Invasive Blood Pressure systolic <= -0.285\ngini = 0.5\nsamples = 1009\nvalue = [504.0, 505.0]"] ;
+1 [label="Heart Rate <= 1.409\ngini = 0.451\nsamples = 423\nvalue = [145, 278]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Non Invasive Blood Pressure systolic <= -1.003\ngini = 0.471\nsamples = 366\nvalue = [139, 227]"] ;
+1 -> 2 ;
+3 [label="gini = 0.366\nsamples = 116\nvalue = [28, 88]"] ;
+2 -> 3 ;
+4 [label="gini = 0.494\nsamples = 250\nvalue = [111, 139]"] ;
+2 -> 4 ;
+5 [label="Non Invasive Blood Pressure diastolic <= 0.431\ngini = 0.188\nsamples = 57\nvalue = [6, 51]"] ;
+1 -> 5 ;
+6 [label="gini = 0.075\nsamples = 51\nvalue = [2, 49]"] ;
+5 -> 6 ;
+7 [label="gini = 0.444\nsamples = 6\nvalue = [4, 2]"] ;
+5 -> 7 ;
+8 [label="Respiratory Rate <= 0.697\ngini = 0.475\nsamples = 586\nvalue = [359, 227]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="O2 saturation pulseoxymetry <= -1.371\ngini = 0.431\nsamples = 458\nvalue = [314, 144]"] ;
+8 -> 9 ;
+10 [label="gini = 0.264\nsamples = 32\nvalue = [5, 27]"] ;
+9 -> 10 ;
+11 [label="gini = 0.398\nsamples = 426\nvalue = [309.0, 117.0]"] ;
+9 -> 11 ;
+12 [label="Non Invasive Blood Pressure diastolic <= -0.25\ngini = 0.456\nsamples = 128\nvalue = [45, 83]"] ;
+8 -> 12 ;
+13 [label="gini = 0.219\nsamples = 40\nvalue = [5, 35]"] ;
+12 -> 13 ;
+14 [label="gini = 0.496\nsamples = 88\nvalue = [40, 48]"] ;
+12 -> 14 ;
+}
