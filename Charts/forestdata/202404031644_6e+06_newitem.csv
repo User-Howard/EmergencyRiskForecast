@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Non Invasive Blood Pressure diastolic <= 46.035\ngini = 0.5\nsamples = 849\nvalue = [657, 647]"] ;
+1 [label="gini = 0.342\nsamples = 156\nvalue = [52, 186]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.491\nsamples = 693\nvalue = [605, 461]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
